@@ -34,15 +34,16 @@ export default function App() {
   return (<Navbar className="bg-black text-white px-6 py-4 w-full relative" 
   isMenuOpen={isMenuOpen}
   onMenuOpenChange={setIsMenuOpen}>
-
-  <NavbarContent className="sm:hidden flex-1 justify-end" justify="end">
-   
     <NavbarBrand>
       <Link href="/" className="flex items-center gap-2">
         <AcmeLogo />
         <p className="font-bold">ARIA</p>
       </Link>
     </NavbarBrand>
+    
+  <NavbarContent className="sm:hidden flex-1 justify-end" justify="end">
+   
+
 
      <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
